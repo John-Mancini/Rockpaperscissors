@@ -10,9 +10,9 @@ let playGame=confirm("Lets play rock, paper or scissors");
                   playerOne === "s") 
                   {
                 let computerChoice= Math.floor(Math.random() * 3 + 1);
-                let computer = computerChoice === 1 ? "rock"
-                    : computerChoice === 2 ? "paper"
-                    : "scissors";
+                let computer = computerChoice === 1 ? "r"
+                    : computerChoice === 2 ? "p"
+                    : "s";
                 let results = playerOne === computer
                     ? "Tie game!"
                     : playerOne === "r" && computer === "p"
